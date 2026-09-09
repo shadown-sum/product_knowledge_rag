@@ -12,9 +12,14 @@ load_dotenv()
 @dataclass
 class MineruConfig:
     base_url: str
-    api_key : str
+    api_token : str
 
 mineru_config = MineruConfig(
     base_url=os.getenv("MINERU_BASE_URL"),
-    api_key=os.getenv("MINERU_API_TOKEN")
+    api_token=os.getenv("MINERU_API_TOKEN")
 )
+
+
+if __name__ == '__main__':
+    print(mineru_config.api_token)
+    print(mineru_config.base_url)
