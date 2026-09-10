@@ -26,8 +26,4 @@ lm_config = LLMConfig(
 )
 
 if __name__ == '__main__':
-    print(lm_config.api_key)
-    print(lm_config.base_url)
-    print(lm_config.lv_model)
-    print(lm_config.llm_model)
-    print(lm_config.llm_temperature)
+    print()
